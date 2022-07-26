@@ -1,9 +1,10 @@
 //Exercicio A
-const frase = "Jorge tem uma casa verde e com portão azul, com os dizeres: \n\"BOAS VINDAS, mas não deixe o gato sair.\""
+const frase = "Jorge tem uma casa verde e com portão azul, com os dizeres: \n
+\"BOAS VINDAS, mas não deixe o gato sair.\""
 console.log(frase)
 
 //Exercicio B
-const novaFrase = frase.replaceAll('verde','rosa') && frase.replaceAll('azul','laranja')
+const novaFrase = frase.replaceAll('verde','rosa').replaceAll('azul','laranja')
 console.log(novaFrase)
 
 //Exercicio C
@@ -13,6 +14,10 @@ E \"laranja\"?\n
 ${novaFrase.includes("laranja")}`)
 
 //Extra
-const msgMaiuscula = novaFrase.replaceAll("mas não deixe o gato sair","MAS NÃO DEIXE O GATO SAIR")
+/*const msgMaiuscula = novaFrase.replaceAll("mas não deixe o gato sair","MAS NÃO DEIXE O GATO SAIR")
+console.log(msgMaiuscula)*/
+
+const msgMaiuscula = novaFrase.toUpperCase("mas não deixe o gato sair")
 console.log(msgMaiuscula)
+
 
